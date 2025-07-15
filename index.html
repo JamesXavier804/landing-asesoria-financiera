@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanzasPro - Asesoría Financiera Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>FinanzasPro</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transforma tu Futuro Financiero con 
+                    <span class="highlight">Asesoría Profesional</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Obtén estrategias personalizadas para maximizar tus inversiones, 
+                    reducir riesgos y alcanzar tus metas financieras con el respaldo 
+                    de expertos certificados.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openModal()">
+                        <i class="fas fa-calendar-alt"></i>
+                        Consulta Gratuita
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Ver Cómo Funciona
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Tasa de Éxito</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/crecimiento-financiero.jpg" alt="Crecimiento Financiero">
+                <div class="floating-card">
+                    <i class="fas fa-trending-up"></i>
+                    <span>+25% ROI Promedio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <div class="problem-content">
+                <h2>¿Te Sientes Perdido con tus Finanzas?</h2>
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Inversiones Riesgosas</h3>
+                        <p>Sin conocimiento experto, puedes perder dinero en inversiones mal planificadas.</p>
+                    </div>
+                    <div class="problem-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Falta de Tiempo</h3>
+                        <p>No tienes tiempo para analizar mercados y oportunidades de inversión.</p>
+                    </div>
+                    <div class="problem-item">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Información Confusa</h3>
+                        <p>Demasiada información contradictoria te paraliza para tomar decisiones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios de Asesoría</h2>
+                <p>Soluciones integrales para todas tus necesidades financieras</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Planificación Financiera Personal</h3>
+                    <p>Desarrollamos un plan financiero personalizado que se adapta a tus objetivos y situación actual.</p>
+                    <ul>
+                        <li>Análisis de situación financiera</li>
+                        <li>Establecimiento de metas</li>
+                        <li>Estrategias de ahorro</li>
+                        <li>Plan de emergencias</li>
+                    </ul>
+                    <div class="service-price">Desde $150/mes</div>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Más Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Gestión de Inversiones</h3>
+                    <p>Maximiza tus rendimientos con estrategias de inversión profesionales y diversificadas.</p>
+                    <ul>
+                        <li>Análisis de perfil de riesgo</li>
+                        <li>Diversificación de portafolio</li>
+                        <li>Monitoreo constante</li>
+                        <li>Rebalanceo periódico</li>
+                    </ul>
+                    <div class="service-price">Desde $300/mes</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguros y Protección</h3>
+                    <p>Protege tu patrimonio y el de tu familia con las mejores opciones de seguros del mercado.</p>
+                    <ul>
+                        <li>Seguros de vida</li>
+                        <li>Seguros de salud</li>
+                        <li>Protección patrimonial</li>
+                        <li>Seguros de invalidez</li>
+                    </ul>
+                    <div class="service-price">Consulta gratuita</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>¿Por Qué Elegir FinanzasPro?</h2>
+                    <p class="about-intro">
+                        Con más de 15 años de experiencia en el mercado financiero, 
+                        nuestro equipo de expertos certificados te brinda la confianza 
+                        y seguridad que necesitas para tomar las mejores decisiones financieras.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Certificaciones Profesionales</h4>
+                                <p>Nuestros asesores cuentan con certificaciones CFP, CFA y FRM reconocidas internacionalmente.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Atención Personalizada</h4>
+                                <p>Cada cliente recibe un plan único diseñado específicamente para sus necesidades y objetivos.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h4>Máxima Seguridad</h4>
+                                <p>Utilizamos tecnología de punta para proteger tu información y tus inversiones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/equipo-profesional.jpg" alt="Equipo Profesional">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>Historias reales de éxito financiero</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Gracias a FinanzasPro logré aumentar mis ahorros en un 40% en solo un año. Su asesoría personalizada fue clave para alcanzar mis metas."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <span>Empresaria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"El equipo de FinanzasPro me ayudó a diversificar mi portafolio y reducir riesgos. Ahora tengo tranquilidad financiera para mi familia."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <span>Ingeniero</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Profesionales, confiables y con resultados comprobados. Mi inversión ha crecido consistentemente desde que trabajo con ellos."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Ana Martínez</h4>
+                            <span>Doctora</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Resolvemos tus dudas más comunes</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es el monto mínimo para comenzar?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No hay un monto mínimo específico. Trabajamos con clientes de diferentes niveles económicos y adaptamos nuestras estrategias a tu situación particular.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo garantizan la seguridad de mis inversiones?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Utilizamos estrategias de diversificación, análisis de riesgo constante y trabajamos solo con instituciones financieras reguladas y de alta reputación.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Con qué frecuencia recibiré reportes de mis inversiones?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Enviamos reportes mensuales detallados y tienes acceso 24/7 a una plataforma online donde puedes monitorear tus inversiones en tiempo real.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo cancelar el servicio en cualquier momento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, no hay compromisos a largo plazo. Puedes cancelar el servicio con 30 días de anticipación sin penalizaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>¿Listo para Transformar tus Finanzas?</h2>
+                    <p>Agenda tu consulta gratuita hoy mismo y descubre cómo podemos ayudarte a alcanzar tus metas financieras.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@finanzaspro.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Oficina</h4>
+                                <p>Av. Principal 123, Ciudad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="planificacion">Planificación Financiera</option>
+                                <option value="inversiones">Gestión de Inversiones</option>
+                                <option value="seguros">Seguros y Protección</option>
+                                <option value="consulta">Consulta General</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tus objetivos financieros" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Solicitar Consulta Gratuita
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>FinanzasPro</span>
+                    </div>
+                    <p>Tu socio confiable para el éxito financiero. Transformamos vidas a través de asesoría financiera profesional y personalizada.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Planificación Financiera</a></li>
+                        <li><a href="#servicios">Gestión de Inversiones</a></li>
+                        <li><a href="#servicios">Seguros y Protección</a></li>
+                        <li><a href="#servicios">Consultoría Empresarial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#nosotros">Acerca de Nosotros</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FinanzasPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="consultaModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Agenda tu Consulta Gratuita</h2>
+            <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+            <form id="modalForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Teléfono" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">¿Cuál es tu principal objetivo financiero?</option>
+                        <option value="ahorrar">Aumentar mis ahorros</option>
+                        <option value="invertir">Comenzar a invertir</option>
+                        <option value="proteger">Proteger mi patrimonio</option>
+                        <option value="planificar">Planificar mi jubilación</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Solicitar Consulta</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
